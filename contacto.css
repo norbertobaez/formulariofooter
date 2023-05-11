@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+   
+    margin: 0;
+    background: rgb(20, 20, 20);
+}
+@media(min-width:780px){
+    body{
+        background: rgb(1, 11, 12);
+      
+    }
+}
+.contacto{
+    width: 100%;
+    background-image: url(./frondo/pablo-merchan-montes-hyIE90CN6b0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    overflow: auto;
+}
+ @media(min-width:780px){
+    .contacto{
+        background-size:100% 100%;
+        background-attachment: fixed;
+        background-image: url(./frondo/hamburguesa-vista-frontal-verduras-carne.jpg);
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+ }
+.contacto__titulo{
+ margin-top: 50px;
+}
+
+.contacto__h2{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-weight: 200;
+  color: #eb1414;;
+  
+}
+@media(min-width:780px){
+    .contacto__h2{
+        font-size: 80px;
+        font-family: 'Courgette', cursive;
+        
+        -webkit-text-stroke: rgb(9, 0, 0) 2px;
+        color: #f71d1d;
+    }
+}
+.contacto__form{
+  text-align: center;
+}
+@media(min-width:780px){
+.contacto__form{
+    padding: 50px;
+}
+}
+
+.contacto__div-label{
+margin: 20px 0;
+}
+
+.contacto__label{
+color: aliceblue;
+font-size: 25px;
+font-family: 'Roboto Mono', monospace;
+font-weight: 100;
+-webkit-text-stroke: 1px rgb(226, 24, 24);
+}
+@media(min-width:780px){
+    .contacto__label{
+        color: #eb1414;
+       
+        font-size: 30px;
+        font-family: 'Courgette', cursive;
+    } 
+}
+
+.contacto__input{
+    background: #f1686880; 
+    border: none;
+    border-bottom: solid rgb(240, 114, 114);
+    width: 300px;
+    height: 30px;
+    border-radius: 12px;
+    color:rgb(249, 249, 249);
+    font-size: 16px;
+
+}
+
+.contacto__textarea{
+    background: #f1686880; 
+    width: 300px;
+    border-radius: 12px;
+    color:rgb(249, 249, 249);
+    font-size: 16px;
+    
+}
+
+.contacto__div-button{
+ padding: 50px 0;
+}
+
+.contacto__button{
+position: relative;
+display: inline-block;
+background-color: #eb1414;;
+width: 300px;
+height: 40px;
+border-radius: 20px;
+border:none;
+color: aliceblue;
+font-size: 20px;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+line-height: 27px;
+transition: 0.5s;
+overflow: hidden;
+}
+.contacto__button:hover {
+   background-color: rgb(240, 132, 132);
+   transition: 0.6s;
+}
+
+/*section footer*/
+
+.footer{
+ height: 500px;
+ background-color: #B61010;
+ }
+ @media(min-width:780px){
+    .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+        
+       
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+     gap: 50px;
+     
+     
+}
+@media(min-width:780px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+        
+       
+    }
+}
+
+
+.img{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    margin-top: 30px;
+}
+@media(min-width:780px){
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.seguinos{
+    color:aliceblue;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+@media(min-width:780px){
+    .seguinos{
+        font-size: 35px;
+    }
+}
+
+.redes_sociales a{
+   
+    display: inline-block;
+    text-decoration: none; 
+    color: aliceblue;
+    margin: 10px;
+    background-color:  #e65050;
+   width: 55px;
+   height: 55px;
+   line-height: 55px;
+   text-align: center;
+   border-radius: 50px;
+   transition: all 300ms ease;
+   
+}
+
+.redes_sociales a:hover{
+    color: rgb(240, 132, 132);
+}

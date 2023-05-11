@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Roboto&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/89377f6398.js" crossorigin="anonymous"></script>
+    <script async src="./contacto.js"></script>
+</head>
+<body>
+    <section class="contacto">
+        <div class="contacto__titulo">
+            <h2 class="contacto__h2">!Nos agrada saber de vos!</h2>
+        </div>
+        <form action="" class="contacto__form" id="formulario" onsubmit="return validarFormulario()" >
+            <div class="contacto__div-label">
+                <label for="usuario" class="contacto__label" >Nombre y apellido</label>
+            </div>
+            <input class="contacto__input" type="text" name="nombre" id="nombre" >
+            <div class="contacto__div-label">
+                <label for="email" class="contacto__label" >Correo electrónico</label>
+            </div>
+            <input class="contacto__input" type="email" name="email" id="email">
+            <div class="contacto__div-label">
+                <label class="contacto__label" for="">Dejamos tu comentario</label>
+            </div>
+            <textarea class="contacto__textarea" name="" id="" cols="30" rows="10"  ></textarea>
+            <div class="contacto__div-button">
+                <button type="submit" class="contacto__button" >Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="logo">
+                <img class="img" src="./frondo/Circle Badge Burger Food Logo.png" alt="" >
+            </div>
+            <h2 class="seguinos">Seguinos en</h2>
+            <div class="redes_sociales">
+                <a href="#" class="fa fa-facebook fa-2x" ></a>
+                <a href="#" class="fa fa-instagram fa-2x"></a>
+                <a href="#" class="fa fa-youtube fa-2x"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
