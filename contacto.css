@@ -2,6 +2,199 @@
     box-sizing: border-box;
 }
 
+
+.header {
+    font-family: 'Nunito', sans-serif;
+    background-color: #B61010;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+    align-items: center;
+}
+
+.header .logo {
+    cursor: pointer;
+
+}
+
+.header .logo img {
+    height: 5rem;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-bar {
+    display: flex;
+
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.nav-link li a {
+    display: inline-block;
+    padding: 25px 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link li a:hover {
+    color: black;
+}
+
+.nav-redes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-redes li .fa-instagram:hover {
+    color: red;
+}
+
+.nav-redes li .fa-facebook:hover {
+    color: blue;
+}
+
+.nav-redes li .fa-square-whatsapp:hover {
+    color: green;
+}
+
+.nav-redes li .fa-envelope:hover {
+    color: white;
+}
+
+.checkbtn {
+    display: none;
+}
+
+#menu-check {
+    display: none;
+}
+
+.nav-redes li:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .header .logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-link {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-redes {
+        margin: 0;
+    }
+
+    .header .logo img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .menu-abrir {
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    #menu-check:not(:checked)~nav .nav-link {
+        display: none;
+    }
+
+    #menu-check:checked~nav .nav-link {
+        display: block;
+    }
+
+    .checkbtn {
+        display: block;
+        color: aliceblue;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        font-size: 40px;
+        z-index: 9999;
+    }
+
+    .checkbtn:hover {
+        color: #050404;
+    }
+
+    #menu-cerrar {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-abrir {
+        display: none;
+    }
+
+    #menu-check:checked~label #menu-cerrar {
+        display: block;
+    }
+
+    nav .nav-redes {
+        padding-top: 50px;
+        font-size: 25px;
+    }
+
+    #nav-link {
+        display: flex;
+        text-align: center;
+        position: absolute;
+        top: 115px;
+        right: 0;
+        width: 100%;
+        background-color: #B61010;
+
+    }
+
+    nav .nav-link li {
+        display: inline-block;
+        margin: 0;
+        padding: 0%;
+        font-size: 20px;
+    }
+
+    nav .nav-link li a {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        font-size: 20px;
+        flex-wrap: nowrap;
+        color: white;
+    }
+
+}
+
+
 body{
    
     margin: 0;
